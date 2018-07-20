@@ -1,0 +1,1565 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!DOCTYPE html>
+	<!-- <script type="text/javascript" src="script/script.js"></script> -->
+	<title>Nase Tipe</title>
+</head>
+<body>
+	<h1 id='naslov' >TURNIR OKORELIH 2018</h1>
+	<h2>Broj odigranih mečeva <span id='brojMeceva'>0</span>/64</h2>
+	<!-- <audio controls>
+	  <source src="himna.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+	</audio> -->
+	<section id='top'>
+		<table id='plasman'>
+			<tr>
+				<td colspan="3">Plasman</td>
+			</tr>
+			<tr class='menjaj'>
+				<td>Gosim <img src="css/gosim.png" /></td>
+				<td id='#1'>0</td>
+			</tr>
+			<tr class='menjaj'>
+				<td>Gospođa <img src="css/gospodja.png" /></td>
+				<td id='#2'>0</td>
+			</tr>
+			<tr class='menjaj'>
+				<td>Gile <img src="css/gile.png" /></td>
+				<td id='#3'>0</td>
+			</tr>
+			<tr class='menjaj'>
+				<td>Bankar <img src="css/bankar.png" height="50px" width="50px" /></td>
+				<td id='#4'>0</td>
+			</tr>
+			<tr class='menjaj'>
+				<td>Miljan <img src="css/miljan.png" height="50px" width="50px"/></td>
+				<td id='#5'>0</td>
+			</tr>
+			<tr class='menjaj'>
+				<td>Lope <img src="css/lope.png" /></td>
+				<td id='#6'>0</td>
+			</tr>
+		</table>
+		<img src="css/trofej.png" id='trofej'/>
+	</section>
+	<div id="wrap">
+	<table id='tekme'>
+			<thead>
+			<tr id='zalepi'>
+				<td id='mec'>Meč</td>
+				<td id="poluvreme">Poluvreme</td>
+				<td>Kraj</td>
+				<td colspan="3">Gosim</td>
+				<td colspan="3">Gospođa</td>
+				<td colspan="3">Gile</td>
+				<td colspan="3">Bankar</td>
+				<td colspan="3">Miljan</td>
+				<td colspan="3">Lope</td>
+			</tr>
+			</thead>
+		<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>KI</td>
+			<td>PK</td>
+			<td>UG</td>
+			<td>KI</td>
+			<td>PK</td>
+			<td>UG</td>
+			<td>KI</td>
+			<td>PK</td>
+			<td>UG</td>
+			<td>KI</td>
+			<td>PK</td>
+			<td>UG</td>
+			<td>KI</td>
+			<td>PK</td>
+			<td>UG</td>
+			<td>KI</td>
+			<td>PK</td>
+			<td>UG</td>
+		</tr>
+		<tr class="tipe">
+			<td>Rusija - </br> Saudijska Arabija</td>
+			<td><span class='domPol'>2</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">5</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>X1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>X1</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+		<td>Egipat - </br> Urugvaj</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>X2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Maroko - </br> Iran</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>0-2</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>xx</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>1x</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>x1</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+		<tr>
+			<td>Portugal - </br> Španija</td>
+			<td><span class='domPol'>2</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">3</span>:<span class="gosKra">3</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>1x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>1x</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Francuska - </br> Australija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>0</td>
+			<td class='bankarPk'>0</td>
+			<td class='bankarGol'>0</td>
+			<td class='miljanKon'>0</td>
+			<td class='miljanPk'>0</td>
+			<td class='miljanGol'>0</td>
+			<td class='lopeKon'>0</td>
+			<td class='lopePk'>0</td>
+			<td class='lopeGol'>0</td>
+		</tr>
+		<tr>
+			<td>Argentina - </br> Island</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Peru - </br> Danska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>0-2</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Hrvatska - </br> Nigerija</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Kostarika - </br> Srbija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>x2</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>x2</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Nemačka - </br> Meksiko</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Brazil - </br> Švajcarska</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Švedska - </br> Južna Koreja</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td> 
+			<td><span class="domKra">1</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>0-2</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>2x</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>2x</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+		<tr>
+			<td>Belgija - </br> Panama</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">3</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Tunis - </br> Engleska</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Kolumbija - </br> Japan</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Poljska - </br> Senegal</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>2x</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Rusija - </br> Egipat</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">3</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>2x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>2x</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>xx</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Portugal - </br> Maroko</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Urugvaj - </br> Saudijska Arabija</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Iran - </br> Španija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>2</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>2</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Danska - </br> Australija</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>xx</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Francuska - </br> Peru</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Argentina - </br> Hrvatska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">3</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>1x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>2x</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Brazil - </br> Kostarika</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Nigerija - </br> Island</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>x2</td>
+			<td class='gosimGol'>0-2</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>x2</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>xx</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+		<tr>
+			<td>Srbija - </br> Švajcarska</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>2x</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Belgija - </br> Tunis</td>
+			<td><span class='domPol'>3</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">5</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Južna Koreja - </br> Meksiko</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Nemačka - </br> Švedska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Engleska - </br> Panama</td>
+			<td><span class='domPol'>5</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">6</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Japan - </br> Senegal</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>x2</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>xx</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>x2</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+		<tr>
+			<td>Poljska - </br> Kolumbija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">3</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>x2</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Saudijska Arabija - </br> Egipat</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>xx</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Urugvaj - </br> Rusija</td>
+			<td><span class='domPol'>2</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">3</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>1x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Iran - </br> Portugal</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>2x</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>xx</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Španija - </br> Maroko</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Danska - </br> Francuska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>xx</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Australija - </br> Peru</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>1x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>2x</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Argentina - </br> Nigerija</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>xx</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Hrvatska - </br> Island</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>x2</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>2x</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>xx</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>2x</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Meksiko - </br> Švedska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">3</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>2x</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Južna Koreja - </br> Nemačka</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Srbija - </br> Brazil</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Švajcarska - </br> Kostarika</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>2x</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>2x</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>1x</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Japan - </br> Poljska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>xx</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Senegal - </br> Kolumbija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>xx</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>22</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Engleska - </br> Belgija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>x2</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>xx</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>xx</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>1x</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Panama - </br> Tunis</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>x2</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Francuska - </br> Argentina</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">4</span>:<span class="gosKra">3</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>x2</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>xx</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Urugvaj - </br> Portugal</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>2x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>x2</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>2x</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Španija - </br> Rusija</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Hrvatska - </br> Danska</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Brazil - </br> Meksiko</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>21</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>1x</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Belgija - </br> Japan</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">3</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>11</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>11</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Švedska - </br> Švajcarska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>xx</td>
+			<td class='gosimGol'>0-2</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>xx</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Kolumbija - </br> Engleska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>2x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>22</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>12</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>x1</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Urugvaj - </br> Francuska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>x</td>
+			<td class='miljanPk'>xx</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Brazil - </br> Belgija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>2</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>3+</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>22</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>2x</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Švedska - </br> Engleska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">0</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>xx</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>22</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>x</td>
+			<td class='bankarPk'>1x</td>
+			<td class='bankarGol'>0-2</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>2</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+		<tr>
+			<td>Rusija - </br> Hrvatska</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>2</td>
+			<td class='gosimPk'>22</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>x</td>
+			<td class='gilePk'>xx</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>x1</td>
+			<td class='bankarGol'>2-3</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>xx</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+		<tr>
+			<td>Francuska - </br> Belgija</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>x1</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>2x</td>
+			<td class='lopeGol'>3+</td>
+		</tr>
+		<tr>
+			<td>Hrvatska - </br> Engleska</td>
+			<td><span class='domPol'>0</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">1</span>:<span class="gosKra">1</span></td>
+			<td class='gosimKon'>x</td>
+			<td class='gosimPk'>2x</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>2</td>
+			<td class='gospodjaPk'>x2</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>x1</td>
+			<td class='gileGol'>2-3</td>
+			<td class='bankarKon'>2</td>
+			<td class='bankarPk'>22</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>2</td>
+			<td class='miljanPk'>x2</td>
+			<td class='miljanGol'>0-2</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>x2</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Belgija - </br> Engleska</td>
+			<td><span class='domPol'>1</span>:<span class='gosPol'>0</span></td>
+			<td><span class="domKra">2</span>:<span class="gosKra">0</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>3+</td>
+			<td class='gospodjaKon'>1</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>2-3</td>
+			<td class='gileKon'>1</td>
+			<td class='gilePk'>11</td>
+			<td class='gileGol'>3+</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>21</td>
+			<td class='miljanGol'>3+</td>
+			<td class='lopeKon'>1</td>
+			<td class='lopePk'>x1</td>
+			<td class='lopeGol'>2-3</td>
+		</tr>
+		<tr>
+			<td>Francuska - </br> Hrvatska</td>
+			<td><span class='domPol'>2</span>:<span class='gosPol'>1</span></td>
+			<td><span class="domKra">4</span>:<span class="gosKra">2</span></td>
+			<td class='gosimKon'>1</td>
+			<td class='gosimPk'>11</td>
+			<td class='gosimGol'>2-3</td>
+			<td class='gospodjaKon'>x</td>
+			<td class='gospodjaPk'>x1</td>
+			<td class='gospodjaGol'>0-2</td>
+			<td class='gileKon'>2</td>
+			<td class='gilePk'>x2</td>
+			<td class='gileGol'>0-2</td>
+			<td class='bankarKon'>1</td>
+			<td class='bankarPk'>11</td>
+			<td class='bankarGol'>3+</td>
+			<td class='miljanKon'>1</td>
+			<td class='miljanPk'>11</td>
+			<td class='miljanGol'>2-3</td>
+			<td class='lopeKon'>x</td>
+			<td class='lopePk'>xx</td>
+			<td class='lopeGol'>0-2</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+</body>
+<script src="https://unpkg.com/sticky-table-headers"></script>
+<script type="text/javascript" src="script/script.js"></script>
+</html>
